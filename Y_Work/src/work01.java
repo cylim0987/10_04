@@ -18,8 +18,8 @@ public class work01 {
 		int height = ' ';
 
 		//제지방량
-		double result = ST1 * weight - ST2 * 
-				        ((weight * weight) /(double)(height * height)); 
+//		double result = ST1 * weight - ST2 * 
+//				        ((weight * weight) /(double)(height * height)); 
 
 
 		// 체지방량 구하기
