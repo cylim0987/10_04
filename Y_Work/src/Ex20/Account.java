@@ -1,11 +1,13 @@
 package Ex20;
+//클래스
 
 public class Account {
-
+	//필드
 	private String ano;
 	private String owner;
 	private int balance;
-
+	
+	//생성자
 	public Account(String ano, String owner, int balance) {
 		this.ano = ano;
 		this.owner = owner;
@@ -32,7 +34,13 @@ public class Account {
 		return balance;
 	}
 
-	public void setBalance(int balance) {
-		this.balance = balance;
+@Override
+	public String toString() {
+		return "Account [ano=" + ano + ", owner=" + owner + ", balance=" + balance + "]";
+	}
+
+	public void setBalance(int i) {
+		
 	}
 }
+
