@@ -1,8 +1,8 @@
-package WorkBMI;
+package Work;
 
 import java.util.Scanner;
 
-public class Work4 {
+public class Work0003 {
 
 	public static void main(String[] args) {
 		
@@ -12,20 +12,7 @@ final double Lmale = 1.10;
 final double Lfemale = 1.07;
 final double ST2 = 128;
 		
-	while(run) {
-		System.out.println("성별, 나이, 키, 몸무게 순 입력");
-		String input = scanner.nextLine(); //nextLine으로 받으면 마지막에도 Line으로 받으라?
-		String[] arr = input.split(" ");
-		String gender = arr[0];
-		int age = Integer.parseInt(arr[1]); //Integer.parseInt라는 함수를 써야한다.
-		double height = Double.parseDouble(arr[2]);
-		double weight = Double.parseDouble(arr[3]);
-	} //스트링을 자르는 작업 등 추가 작업이 필요한 코드.
-	
-	}
-}	
-		
-/*
+	while(true) {
 		System.out.println("성별을 입력하시오: M / F");
 			String gender = scanner.next();
 		System.out.println("나이를 입력하시오:");
@@ -82,11 +69,32 @@ final double ST2 = 128;
 			
 		}
 	System.out.println("계속할겁니까 Y / N");
-	String yesNo = scanner.next(); //Line Line으로 받아야한다.? Integer.parseInt 이부분.
+	String yesNo = scanner.next();
 	if (yesNo.equals("N"))
 		break;
 	}
 	}
 }
+
+/*
+ * 
+ * // 제지방량 구하기
+		final double Lmale = 1.10;
+		final double Lfemale = 1.07;
+		final double ST2 = 128;
+
+ * 
+//제지방량
+		double result = Lmale * weight - ST2 * 
+				        ((weight * weight) /(double)(height * height)); 
+
+// 체지방량 구하기
+		double result2 = weight - result;
+		
+		
+// 체지방률 구하기 = 체지방량*100/체중
+		final double ST3 = 100;
+
+		double result3 = result2 * ST3 / weight;
 
 */

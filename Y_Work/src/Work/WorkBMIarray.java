@@ -1,4 +1,4 @@
-package WorkBMI;
+package Work;
 
 import java.util.Scanner;
 public class WorkBMIarray {
