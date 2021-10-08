@@ -2,7 +2,7 @@ package Ex20;
 
 import java.util.Scanner;
 
-public class BankApplication2 {
+public class BankApplication2 {ししししし
 	private static Account[] accountArray = new Account[100];// [null][null][null][null]..[null]-100鯵
 	private static Scanner scanner = new Scanner(System.in);
 	private static int idx;// idx=0;

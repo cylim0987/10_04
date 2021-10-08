@@ -1,18 +1,28 @@
-package Ex20T;
+package Presentation;
 
+import java.util.Arrays;
+
+//클래스
 public class Stock {
-	//필드
+
+	// 필드
+	static final String itemNo = "111";
+	static int seq = 0;
 	private String item;
 	private String name;
 	private int qty;
-	
-	//생성자
-	public Stock(String item, String name, int qty) {
-		this.item = item;
+	{
+		seq++;
+		String str = String.format("%03d", seq);
+		item = itemNo + "-" + str;
+	}
+
+	// 생성자
+	public Stock(String name, int qty) {
 		this.name = name;
 		this.qty = qty;
+	}
 
-		//generate getter and setter
 	public String getItem() {
 		return item;
 	}
@@ -37,5 +47,11 @@ public class Stock {
 		this.qty = qty;
 	}
 
+//Stock 정보 출력 메소드
+
+	@Override //source toString fields. 
+	public String toString() {
+		return "Stock [상품번호=" + item + ", 상품명=" + name + ", 재고=" + qty + "]";
 	}
+
 }

@@ -1,28 +1,31 @@
-package Ex20;
+package Ex20X;
 
+import java.text.DecimalFormat;
 import java.util.Arrays;
 
 //適掘什
 
-public class AccountT {ししししし
+public class Account {
 	//琶球
-static final String bankNo="111";
-static int seq=0;
-private String ano;
-private String owner;
-private int balance;
+ static final String bankNo="111";
+ static int seq=0;
+ private String ano;
+ private String owner;
+ private int balance;
 
-{
+ {
 	seq++;
-	ano = bankNo +"-"+seq+seq+seq;
-}
-//持失切
-public AccountT(String ano, String owner, int balance) {
+	DecimalFormat df = new DecimalFormat("000");
+	df.format(seq);
+	ano = bankNo +"-"+df.format(seq);
+ }
+ //持失切
+public Account(String ano, String owner, int balance) {
 	this.ano = ano;
 	this.owner = owner;
 	this.balance = balance;
 }
-public AccountT(String owner, int balance) {
+public Account(String owner, int balance) {
 	this.owner = owner;
 	this.balance = balance;
 }

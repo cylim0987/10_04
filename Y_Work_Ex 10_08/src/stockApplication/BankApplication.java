@@ -1,13 +1,9 @@
-package Ex20T;
+package stockApplication;
 
 import java.util.Scanner;
 
-public class BankApplication {ししししししし
-	//域疎級聖 煽舌拝 呪 赤澗 煽舌社研 幻級嬢醤 廃陥.
-//	Account梓端研 食君鯵 煽舌拝 呪 赤澗 展脊精 壕伸戚陥.
-//	Account 壕伸聖 耕軒 琶球稽 識情背兜澗陥.
+public class BankApplication {
 	private static Account[] accountArray = new Account[100];//[null][null][null][null]..[null]-100鯵
-	//static 戚政澗 main拭辞 戚 壕伸聖 紫遂馬奄 是敗. static戚 蒸生檎 main拭辞 紫遂拝 呪亜 蒸製.
 	private static Scanner scanner = new Scanner(System.in);
 	private static int idx;//idx=0;
 	
@@ -65,7 +61,7 @@ public class BankApplication {ししししししし
 				 System.out.println("域疎腰硲:"+account.getAno());
 				 System.out.println("域疎爽:"+account.getOwner());
 				 System.out.println("接壱:"+account.getBalance());
-				// System.out.println(account.toString()); //null稽 鞠嬢赤澗 凧繕痕呪税 葵聖 toString()生稽 石生檎 nullPointer神嫌降持
+				 System.out.println(account.toString()); //null稽 鞠嬢赤澗 凧繕痕呪税 葵聖 toString()生稽 石生檎 nullPointer神嫌降持
 			 }
 		  }
 	}

@@ -1,7 +1,7 @@
 package Ex20;
 //클래스
 
-public class Account {
+public class Account {ㅇㅇㅇㅇㅇㅇㅇㅇ
 	//필드
 	private String ano;
 	private String owner;
