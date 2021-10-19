@@ -15,6 +15,10 @@ public class MyClassMain {
 		s1.set("hello");
 		System.out.println(s1.get());
 		
+		MyClass<Double> s2 = new MyClass<Double>();// 마이클래스 화살표괄호에 Double생략해도 됨.
+		s2.set(10.0);
+		s2.set(new Double(10.0));
+		System.out.println(s2.get());
 		
 		
 	}
